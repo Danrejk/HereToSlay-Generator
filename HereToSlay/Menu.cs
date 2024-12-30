@@ -894,13 +894,13 @@ namespace HereToSlay
                     2 => "Nazwa bohatera",
                     3 => "Nazwa przedmiotu",
                     4 => "Nazwa magii",
-                    _ => "Nazwa przywódcy"
+                    _ => "Nazwa przywÃ³dcy"
                 };
                 labelClass.Text = Properties.Settings.Default.CardType switch
                 {
                     2 => "Klasa bohatera",
                     3 => "Klasa przedmiotu",
-                    _ => "Klasa przywódcy"
+                    _ => "Klasa przywÃ³dcy"
                 };
                 labelSecondClass.Text = "Druga klasa";
                 labelImg.Text = Properties.Settings.Default.CardType switch
@@ -909,35 +909,35 @@ namespace HereToSlay
                     2 => "Obrazek bohatera",
                     3 => "Obrazek przedmiotu",
                     4 => "Obrazek magii",
-                    _ => "Obrazek przywódcy"
+                    _ => "Obrazek przywÃ³dcy"
                 };
                 labelDescription.Text = "Opis";
                 leaderImgToolTip.ToolTipTitle = "Wymiary obazka";
                 toolTipImageDimentions = Properties.Settings.Default.CardType switch
                 {
-                    1 => "Obrazek potwora (nie ca³a karta) ma wymiary 745x817.",
-                    2 => "Obrazek bohatera (nie ca³a karta) ma wymiary 545x545.",
-                    3 => "Obrazek przedmiotu (nie ca³a karta) ma wymiary 545x545.",
-                    4 => "Obrazek magii (nie ca³a karta) ma wymiary 545x545.",
-                    _ => "Obrazek przywódcy (nie ca³a karta) ma wymiary 745x1176.",
+                    1 => "Obrazek potwora (nie caÂ³a karta) ma wymiary 745x817.",
+                    2 => "Obrazek bohatera (nie caÂ³a karta) ma wymiary 545x545.",
+                    3 => "Obrazek przedmiotu (nie caÂ³a karta) ma wymiary 545x545.",
+                    4 => "Obrazek magii (nie caÂ³a karta) ma wymiary 545x545.",
+                    _ => "Obrazek przywÃ³dcy (nie caÂ³a karta) ma wymiary 745x1176.",
                 };
-                leaderImgToolTip.SetToolTip(selectImgButton, toolTipImageDimentions + "\nProgram automatycznie przytnie i przybli¿y obraz, je¿eli bêdzie to potrzebne.\n\nWspierane rozszerzenia plików:\n.png, .jpeg, .jpg, .gif(pierwsza klatka), .bmp, .webp, .pbm, .tiff, .tga");
+                leaderImgToolTip.SetToolTip(selectImgButton, toolTipImageDimentions + "\nProgram automatycznie przytnie i przybliÂ¿y obraz, jeÂ¿eli bÃªdzie to potrzebne.\n\nWspierane rozszerzenia plikÃ³w:\n.png, .jpeg, .jpg, .gif(pierwsza klatka), .bmp, .webp, .pbm, .tiff, .tga");
 
                 gradient.Text = "Tylni gradient";
-                nameWhite.Text = "Bia³a nazwa";
-                splitClass.Text = "Podwójna Klasa";
-                this.Text = "To ja go tnê - Generator kart";
-                labelBad.Text = "Wymagania rzutu - Pora¿ka";
+                nameWhite.Text = "BiaÂ³a nazwa";
+                splitClass.Text = "PodwÃ³jna Klasa";
+                this.Text = "To ja go tnÃª - Generator kart";
+                labelBad.Text = "Wymagania rzutu - PoraÂ¿ka";
                 labelGood.Text = "Wymagania rzutu - UBIJ potwora";
                 goodOutputText.Text = "UBIJ tego potwora";
                 labelReq.Text = "Wymagania klas";
                 RENDER.Text = "ZAPISZ OBRAZ";
                 copyImageToClipboardToolStripMenuItem.Text = "Kopiuj obraz";
-                openImageLocationToolStripMenuItem.Text = "Otwórz lokalizacjê obrazu";
-                labelMaxItem.Text = "Max. iloœæ przedmiotów";
+                openImageLocationToolStripMenuItem.Text = "OtwÃ³rz lokalizacjÃª obrazu";
+                labelMaxItem.Text = "Max. iloÂœÃ¦ przedmiotÃ³w";
                 alternativeColor.Text = "Alternatywny kolor (?)";
                 altColorToolTip.ToolTipTitle = "Alternatywny kolor";
-                altColorToolTip.SetToolTip(alternativeColor, "Na niektórych drukarkach, standardowy kolor mo¿e znacznie odstawiaæ od po¿¹danego.\nStandardowy kolor by³ wziêty prosto z instruckji, wiêc powinnien byæ dobry,\nale niektóre durkarki nie maj¹ poprawnej g³ebi kolorów.\n\nAlternatywny kolor (czarny) mo¿e wygl¹daæ lepiej na niektórych drukarkach.");
+                altColorToolTip.SetToolTip(alternativeColor, "Na niektÃ³rych drukarkach, standardowy kolor moÂ¿e znacznie odstawiaÃ¦ od poÂ¿Â¹danego.\nStandardowy kolor byÂ³ wziÃªty prosto z instruckji, wiÃªc powinnien byÃ¦ dobry,\nale niektÃ³re durkarki nie majÂ¹ poprawnej gÂ³ebi kolorÃ³w.\n\nAlternatywny kolor (czarny) moÂ¿e wyglÂ¹daÃ¦ lepiej na niektÃ³rych drukarkach.");
 
                 if (chosenClass.SelectedIndex == -1 && Properties.Settings.Default.CardType == 2)
                 {
@@ -946,16 +946,16 @@ namespace HereToSlay
                 HeroCard.Image = Properties.Resources.bohater.ToBitmap();
 
                 cardType.Text = "Typ karty";
-                LeaderCard.Text = "Przywódca";
-                MonsterCard.Text = "Potwór";
+                LeaderCard.Text = "PrzywÃ³dca";
+                MonsterCard.Text = "PotwÃ³r";
                 HeroCard.Text = "Bohater";
                 ItemCard.Text = "Przedmiot";
                 MagicCard.Text = "Magia";
 
                 labelAdditionalReq.Text = "Dodatkowe wymagania";
-                additionalReq.Text = "ODRZUÆ X kart";
+                additionalReq.Text = "ODRZUÃ† X kart";
                 labelHeroBonus.Text = "Bonus dodatkowych boh.";
-                heroBonus.Text = "Za ka¿dego dodatkowego bohatera w twojej dru¿ynie, +X do twojego rzutu";
+                heroBonus.Text = "Za kaÂ¿dego dodatkowego bohatera w twojej druÂ¿ynie, +X do twojego rzutu";
             }
             else
             {
@@ -1031,7 +1031,7 @@ namespace HereToSlay
                 ItemCard.Text = "Item";
                 MagicCard.Text = "Magic";
                 ModifierCard.Text = "Modifier";
-                ModifierCard.Text = "Challenge";
+                ChallengeCard.Text = "Challenge";
 
                 additionalReq.Text = "Addidional Requirements";
                 additionalReq.Text = "DISCARD X cards";
